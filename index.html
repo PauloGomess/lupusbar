@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Carta de comida e cocktails do LUPUS Bar.">
+  <meta name="description" content="Carta de comida, cocktails e mocktails do LUPUS Bar.">
   <meta name="theme-color" content="#080808">
   <meta property="og:title" content="Carta | LUPUS Bar">
   <meta property="og:type" content="website">
@@ -51,6 +51,8 @@
     .section-heading p { margin: 16px 0 0; color: var(--muted); }
     .cocktail-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
     .cocktail-grid .menu-section { padding: 26px 22px; }
+    .mocktails { margin-top: 58px; scroll-margin-top: 24px; }
+    .mocktail-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 38px; }
     #comida { scroll-margin-top: 24px; }
     .menu-section { padding: 30px; border: 1px solid rgba(255,255,255,.09); border-radius: 4px; background: linear-gradient(145deg, var(--panel-soft), var(--panel)); }
     .menu-section.highlight { border-color: var(--line); box-shadow: inset 4px 0 0 var(--orange); }
@@ -73,6 +75,8 @@
       .intro-copy { font-size: .96rem; }
       .menu-grid, .cocktail-grid { grid-template-columns: 1fr; gap: 14px; }
       .cocktails { margin-top: 54px; }
+      .mocktails { margin-top: 46px; }
+      .mocktail-list { grid-template-columns: 1fr; }
       .menu-section { padding: 24px 20px; }
     }
     @media print {
@@ -93,10 +97,11 @@
   <main>
     <section class="intro" aria-labelledby="menu-title">
       <h1 id="menu-title">Carta LUPUS</h1>
-      <p class="intro-copy">Comida e cocktails selecionados para acompanhar a tua noite.</p>
+      <p class="intro-copy">Comida, cocktails e mocktails selecionados para acompanhar a tua noite.</p>
       <nav class="menu-nav" aria-label="Navegação da carta">
         <a href="#comida">Comida</a>
         <a href="#cocktails">Cocktails</a>
+        <a href="#mocktails">Mocktails</a>
       </nav>
     </section>
 
@@ -178,6 +183,22 @@
           </ul>
         </section>
       </div>
+    </section>
+
+    <section id="mocktails" class="mocktails" aria-labelledby="mocktails-title">
+      <div class="section-heading">
+        <h2 id="mocktails-title">Mocktails</h2>
+        <p>Todo o ritual, sem álcool.</p>
+      </div>
+
+      <section class="menu-section highlight" aria-label="Seleção de mocktails">
+        <ul class="mocktail-list">
+          <li><span>Passion Fizz<small class="item-description">Maracujá, lima, xarope de maracujá e água com gás.</small></span><strong>4,50 €</strong></li>
+          <li><span>Virgin Mojito<small class="item-description">Lima, hortelã, xarope de açúcar e água com gás.</small></span><strong>4,50 €</strong></li>
+          <li><span>Apple Mule<small class="item-description">Sumo de maçã, lima e ginger beer.</small></span><strong>4,50 €</strong></li>
+          <li><span>Strawberry Sunset<small class="item-description">Morango fresco, laranja, lima e xarope de morango.</small></span><strong>4,50 €</strong></li>
+        </ul>
+      </section>
     </section>
   </main>
 
