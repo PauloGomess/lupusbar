@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Seleção temporária de comida do LUPUS Bar.">
+  <meta name="description" content="Carta de comida do LUPUS Bar.">
   <meta name="theme-color" content="#080808">
-  <meta property="og:title" content="Seleção Temporária | LUPUS Bar">
+  <meta property="og:title" content="Carta de Comida | LUPUS Bar">
   <meta property="og:type" content="website">
-  <title>Seleção Temporária | LUPUS Bar</title>
+  <title>Carta de Comida | LUPUS Bar</title>
   <style>
     :root {
       --black: #080808;
@@ -51,6 +51,7 @@
     li::after { content: ""; grid-column: 2; grid-row: 1; border-bottom: 1px dotted rgba(255,255,255,.2); }
     li:last-child { border-bottom: 0; }
     li span { grid-column: 1; }
+    .item-description { display: block; max-width: 31rem; margin-top: 5px; color: var(--muted); font-size: .78rem; line-height: 1.4; }
     li strong { grid-column: 3; color: var(--orange); white-space: nowrap; }
     footer { padding: 22px 20px 30px; color: #8f8a83; text-align: center; text-transform: uppercase; font-size: .72rem; letter-spacing: .12em; }
     footer p { margin: 0; }
@@ -80,8 +81,8 @@
 
   <main>
     <section class="intro" aria-labelledby="menu-title">
-      <h1 id="menu-title">Seleção Temporária</h1>
-      <p class="intro-copy">Estamos a preparar uma nova carta. Durante esta fase, apresentamos uma seleção reduzida enquanto elevamos, passo a passo, a experiência LUPUS.</p>
+      <h1 id="menu-title">Carta de Comida</h1>
+      <p class="intro-copy">A seleção de comida do LUPUS.</p>
     </section>
 
     <div class="menu-grid">
@@ -94,8 +95,14 @@
         <h2 id="hamburgueres-title">Hambúrgueres</h2>
         <p class="note">Todos acompanhados de batata.</p>
         <ul>
-          <li><span>Burger Banal</span><strong>7,00 €</strong></li>
-          <li><span>Burger Lupus</span><strong>11,90 €</strong></li>
+          <li>
+            <span>Burger Banal<small class="item-description">Hambúrguer de vaca, bacon, queijo cheddar e molho.</small></span>
+            <strong>7,00 €</strong>
+          </li>
+          <li>
+            <span>Burger Lupus<small class="item-description">Hambúrguer de vaca, alface, tomate, bacon, queijo cheddar, pickle, ovo e molho.</small></span>
+            <strong>11,90 €</strong>
+          </li>
         </ul>
       </section>
 
